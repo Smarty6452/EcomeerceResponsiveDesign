@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/singleProduct.css">
+</head>
+<body>
+    <header role="banner">
+        <!-- Header Main -->
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="header-logo">
+                <img src="logo.svg" alt="Site Logo" width="120" height="36">
+            </a>
+
+            <!-- Search Bar -->
+            <div class="header-search" role="search">
+                <nav class="desktop-navigation-menu" role="navigation">
+                    <ul class="menu-category-list">
+                        <li><a href="#" class="menu-title">Home</a></li>
+                        <li><a href="#" class="menu-title">Categories</a></li>
+                        <li><a href="#" class="menu-title">About</a></li>
+                        <li><a href="#" class="menu-title">Contact</a></li>
+                        <li><a href="#" class="menu-title">Offers</a></li>
+                    </ul>
+                </nav>
+               
+            </div>
+
+            <!-- User Actions -->
+            <div class="header-user-actions">
+                <input type="search" name="search" class="search-field" placeholder="Search products...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-alert-news">
+                    <p><b>Free Shipping:</b> Orders Over $55 This Week!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main  role="main">
+        <!-- Product Image Section -->
+         <div class="single_product-container">
+            <div class="single_product-image">
+                <div class="single_product-main-img">
+                    <img src="https://images.pexels.com/photos/45982/pexels-photo-45982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Main Product Image">
+                </div>
+                <div class="single_product-thumbs">
+                    <img src="https://images.pexels.com/photos/14933287/pexels-photo-14933287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 1">
+                    <img src="https://images.pexels.com/photos/14933287/pexels-photo-14933287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 2">
+                    <img src="https://images.pexels.com/photos/14933287/pexels-photo-14933287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 3">
+                    <img src="https://images.pexels.com/photos/14933287/pexels-photo-14933287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Thumbnail 4">
+                </div>
+            </div>
+    
+            <!-- Product Details Section -->
+            <div class="single_product-details">
+                <div class="single_product-breadcrumb">
+                    <a href="#">Home</a> / <a href="#">Product</a> / <span>T-shirt</span>
+                </div>
+                <h1 class="single_product-title">Half Sleeve T-shirt for Men</h1>
+                <div class="single_product-price-section">
+                    <span class="single_product-price">$99.00</span>
+                    <span class="single_product-sale">$129.00</span>
+                </div>
+                <p class="single_product-description">
+                    Stylish, comfortable, and perfect for everyday wear. Available in various colors and sizes to match your style.
+                </p>
+                <div class="single_product-options">
+                    <div class="single_product-size">
+                        <h4>Size</h4>
+                        <div>
+                            <input type="radio" id="size-s" name="size" value="S">
+                            <label for="size-s">S</label>
+                            <input type="radio" id="size-m" name="size" value="M">
+                            <label for="size-m">M</label>
+                            <input type="radio" id="size-l" name="size" value="L">
+                            <label for="size-l">L</label>
+                        </div>
+                    </div>
+                    <div class="single_product-color">
+                        <h4>Color</h4>
+                        <div>
+                            <input type="radio" id="color-black" name="color" value="black">
+                            <label for="color-black" style="background-color: black;"></label>
+                            <input type="radio" id="color-red" name="color" value="red">
+                            <label for="color-red" style="background-color: red;"></label>
+                            <input type="radio" id="color-blue" name="color" value="blue">
+                            <label for="color-blue" style="background-color: blue;"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_product-buttons">
+                    <button class="btn btn-primary">Buy Now</button>
+                    <button class="btn btn-secondary">Add to Cart</button>
+                </div>
+            </div>
+         </div>
+       
+
+         <section class="featured-products">
+            <h2 class="section-title">Featured Clothing</h2>
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <div class="badge">New</div>
+                    <div class="product-tumb">
+                        <img src="https://images.pexels.com/photos/1070959/pexels-photo-1070959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Men's T-shirt">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Men, T-Shirt</span>
+                        <h4><a href="#">Men's Basic T-Shirt</a></h4>
+                        <p>This basic t-shirt is made of soft cotton fabric for everyday wear. Available in multiple colors.</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price"><small>$20.00</small>$30.99</div>
+                            <div class="product-links">
+                                <a href=""><i class="fa fa-heart"></i></a>
+                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <div class="badge">Sale</div>
+                    <div class="product-tumb">
+                        <img src="https://images.pexels.com/photos/1670997/pexels-photo-1670997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Women's Dress">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Women, Dress</span>
+                        <h4><a href="#">Floral Summer Dress</a></h4>
+                        <p>This floral dress is perfect for summer outings, with a comfortable fit and stylish design.</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price"><small>$49.00</small>$75.99</div>
+                            <div class="product-links">
+                                <a href=""><i class="fa fa-heart"></i></a>
+                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <div class="badge">Hot</div>
+                    <div class="product-tumb">
+                        <img src="https://images.pexels.com/photos/1519333/pexels-photo-1519333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Men's Jacket">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Men, Jacket</span>
+                        <h4><a href="#">Leather Jacket</a></h4>
+                        <p>This stylish leather jacket is perfect for colder weather. It’s designed to keep you warm and fashionable.</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price"><small>$110.00</small>$150.99</div>
+                            <div class="product-links">
+                                <a href=""><i class="fa fa-heart"></i></a>
+                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product Card 4 -->
+                <div class="product-card">
+                    <div class="badge">New</div>
+                    <div class="product-tumb">
+                        <img src="https://images.pexels.com/photos/1270289/pexels-photo-1270289.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Women's Hoodie">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Women, Hoodie</span>
+                        <h4><a href="#">Cozy Hoodie</a></h4>
+                        <p>This cozy hoodie is made from a soft blend of cotton and polyester. Perfect for relaxing or casual outings.</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price"><small>$40.00</small>$60.99</div>
+                            <div class="product-links">
+                                <a href=""><i class="fa fa-heart"></i></a>
+                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Product Card 5 -->
+                <div class="product-card">
+                    <div class="badge">Sale</div>
+                    <div class="product-tumb">
+                        <img src="https://images.pexels.com/photos/1522282/pexels-photo-1522282.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Men's Jeans">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Men, Jeans</span>
+                        <h4><a href="#">Slim Fit Jeans</a></h4>
+                        <p>Comfortable and stylish, these slim-fit jeans are perfect for everyday wear or casual events.</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price"><small>$35.00</small>$45.99</div>
+                            <div class="product-links">
+                                <a href=""><i class="fa fa-heart"></i></a>
+                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Card 6 -->
+                <div class="product-card">
+                    <div class="badge">New</div>
+                    <div class="product-tumb">
+                        <img src="https://images.pexels.com/photos/1331739/pexels-photo-1331739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Women's Jacket">
+                    </div>
+                    <div class="product-details">
+                        <span class="product-category">Women, Jacket</span>
+                        <h4><a href="#">Denim Jacket</a></h4>
+                        <p>This classic denim jacket is versatile and pairs well with a variety of outfits for any season.</p>
+                        <div class="product-bottom-details">
+                            <div class="product-price"><small>$55.00</small>$75.99</div>
+                            <div class="product-links">
+                                <a href=""><i class="fa fa-heart"></i></a>
+                                <a href=""><i class="fa fa-shopping-cart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+</body>
+</html>
