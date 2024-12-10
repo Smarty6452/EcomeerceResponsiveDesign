@@ -1,0 +1,405 @@
+/* Global CSS Variables - Define theme colors, spacing, and common properties */
+:root {
+    --primary-color: #155eef;
+    --secondary-color: #004eeb;
+    --text-color: #292929;
+    --text-light: #777;
+    --bg-color: #f8fafc;
+    --white: #fff;
+    --spacing: 16px;
+    --radius: 8px;
+    --cultured: #e5e5e5;
+    --sonic-silver: #757575;
+    --link-hover-color: #fff;
+    --footer-padding: 40px 40px;
+    --column-min-width: 220px;
+    --map-height: 250px;
+    --font-family: 'Poppins', Arial, sans-serif;
+    --footer-border: 1px solid #ccc;
+    --border-radius-sm: 4px;
+    --border-radius-md: 6px;
+    --transition: all 0.3s ease;
+    --focus-outline: 3px solid #155eef;
+}
+
+/* Reset default styles for consistent cross-browser rendering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Accessibility skip link - Hidden by default, visible on focus for keyboard navigation */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Base layout structure with grid for sticky footer */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 150vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    background-color: var(--bg-color);
+}
+
+/* Header styling with container for content width control */
+header {
+    background-color: var(--primary-color);
+    padding: var(--spacing);
+    color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--spacing);
+}
+
+/* Navigation bar with responsive flex layout */
+nav {
+    background-color: var(--secondary-color);
+    padding: var(--spacing);
+}
+
+nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    gap: var(--spacing);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+/* Navigation interaction states with focus indicators for accessibility */
+nav a:hover,
+nav a:focus {
+    background-color: var(--primary-color);
+    outline: var(--focus-outline);
+    outline-offset: 2px;
+}
+
+/* Main content area with responsive grid layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+    display: grid;
+    gap: calc(var(--spacing) * 2);
+}
+
+/* Section containers with elevated card style */
+section {
+    background: var(--white);
+    padding: calc(var(--spacing) * 2);
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Typography scale for headings */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    margin-bottom: var(--spacing);
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: var(--text-color);
+    margin-bottom: var(--spacing);
+    font-size: 2rem;
+}
+
+/* About section grid with responsive card layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--spacing) * 2);
+}
+
+/* Card styling with hover interactions */
+.about-card {
+    padding: var(--spacing);
+    background: var(--white);
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Image handling within about cards */
+.about-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: var(--spacing);
+}
+
+/* Data table styling with responsive scroll container */
+.stats-table-container {
+    overflow-x: auto;
+    margin: var(--spacing) 0;
+    border-radius: var(--radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--white);
+}
+
+/* Table header and caption styling */
+.stats-table caption {
+    padding: var(--spacing);
+    font-weight: bold;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.stats-table th,
+.stats-table td {
+    padding: 12px 16px;
+    border: 1px solid var(--cultured);
+    text-align: left;
+}
+
+.stats-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* Table row styling with alternating backgrounds */
+.stats-table tbody tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+.stats-table tbody tr:hover {
+    background-color: rgba(21, 94, 239, 0.05);
+}
+
+/* Contact form grid layout with responsive adjustments */
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing);
+    background: var(--white);
+    padding: calc(var(--spacing) * 2);
+    border-radius: var(--radius);
+}
+
+/* Form element grouping and layout */
+.form-group {
+    margin-bottom: var(--spacing);
+    position: relative;
+}
+
+.form-full-width {
+    grid-column: 1 / -1;
+}
+
+/* Form element styling and accessibility */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.required-field::after {
+    content: '*';
+    color: #dc3545;
+    margin-left: 4px;
+}
+
+/* Form input styling with focus states */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--cultured);
+    border-radius: var(--border-radius-sm);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(21, 94, 239, 0.1);
+}
+
+.field-hint {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+/* Button styling with interactive states */
+button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--secondary-color);
+    outline: var(--focus-outline);
+    outline-offset: 2px;
+}
+
+/* Map container with fixed height */
+.map-container {
+    height: var(--map-height);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* Footer layout and styling */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: var(--footer-padding);
+    margin-top: auto;
+}
+
+/* Footer grid system for content organization */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--column-min-width), 1fr));
+    gap: calc(var(--spacing) * 2);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    padding: var(--spacing);
+}
+
+.footer-section h3 {
+    margin-bottom: var(--spacing);
+    font-size: 1.25rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+/* Footer link styling with accessibility focus states */
+.footer-section a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 4px 0;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.footer-section a:hover,
+.footer-section a:focus {
+    text-decoration: underline;
+    outline: var(--focus-outline);
+}
+
+/* Responsive breakpoints for mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-table-container {
+        margin: 0 -16px;
+        border-radius: 0;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-image {
+        height: 200px;
+    }
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing);
+    }
+
+    section {
+        padding: var(--spacing);
+    }
+}
+
+/* Print-specific styles for optimal paper output */
+@media print {
+    nav, 
+    .map-container,
+    .contact-form {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
