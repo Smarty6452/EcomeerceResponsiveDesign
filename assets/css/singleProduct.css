@@ -174,18 +174,25 @@
     text-align: center;
     margin-bottom: 10px;
 }
-
+.single_product-details {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  text-align: center;
+}
 .desktop-navigation-menu {
     margin-bottom: 10px;
 }
 
 .menu-category-list {
-    flex-direction: column; /* Stacks navigation links vertically */
+    flex-direction: column; 
     gap: 10px;
 }
 
 .header-user-actions {
-    justify-content: center; /* Centers search bar and button */
+    justify-content: center; 
 }
 
   }
