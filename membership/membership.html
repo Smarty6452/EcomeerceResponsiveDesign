@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Membership - E-Commerce Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="membership.css" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-content">
+            <div class="logo">
+                          </div>
+            <nav role="navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="membership.html" class="nav-link">Membership</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Unlock Exclusive Benefits</h2>
+            <p>Join our premium membership program and enjoy special perks, early access, and exclusive deals.</p>
+        </div>
+    </section>
+
+    <!-- Membership Cards -->
+    <section class="membership-cards" aria-label="Membership Plans">
+        <div class="membership-card">
+            <h3>Basic</h3>
+            <p class="price">$9.99<span>/month</span></p>
+            <ul class="features-list">
+                <li>Free Standard Shipping</li>
+                <li>5% Off All Purchases</li>
+                <li>Member-Only Sales</li>
+                <li>Email Support</li>
+            </ul>
+            <button class="submit-btn">Select Basic</button>
+        </div>
+
+        <div class="membership-card card-popular">
+            <span class="popular-tag">Most Popular</span>
+            <h3>Premium</h3>
+            <p class="price">$19.99<span>/month</span></p>
+            <ul class="features-list">
+                <li>Free Express Shipping</li>
+                <li>10% Off All Purchases</li>
+                <li>Early Access to Sales</li>
+                <li>24/7 Priority Support</li>
+                <li>Exclusive Events</li>
+            </ul>
+            <button class="submit-btn">Select Premium</button>
+        </div>
+
+        <div class="membership-card">
+            <h3>VIP</h3>
+            <p class="price">$29.99<span>/month</span></p>
+            <ul class="features-list">
+                <li>Free Priority Shipping</li>
+                <li>15% Off All Purchases</li>
+                <li>VIP-Only Products</li>
+                <li>Concierge Service</li>
+                <li>Personal Shopper</li>
+            </ul>
+            <button class="submit-btn">Select VIP</button>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" aria-label="Membership Benefits">
+        <div class="benefit-card">
+            <div class="benefit-icon">🎁</div>
+            <h3>Exclusive Deals</h3>
+            <p>Access member-only sales and special discounts throughout the year.</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">🚚</div>
+            <h3>Free Shipping</h3>
+            <p>Enjoy free shipping on all orders with no minimum purchase required.</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h3>Early Access</h3>
+            <p>Be the first to shop new arrivals and exclusive collections.</p>
+        </div>
+        <div class="benefit-card">
+            <div class="benefit-icon">💎</div>
+            <h3>VIP Support</h3>
+            <p>Get priority customer service and dedicated support team access.</p>
+        </div>
+    </section>
+
+    <!-- Sign Up Form -->
+    <section class="signup-section" aria-labelledby="signup-title">
+        <h2 id="signup-title">Join Our Membership Program</h2>
+        <form class="form-grid" action="#" method="POST" novalidate>
+            <div class="form-group">
+                <label class="input-label" for="fullname">Full Name *</label>
+                <input type="text" id="fullname" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="email">Email *</label>
+                <input type="email" id="email" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="phone">Phone</label>
+                <input type="tel" id="phone" class="input-field">
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="birthdate">Date of Birth *</label>
+                <input type="date" id="birthdate" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="address">Address *</label>
+                <input type="text" id="address" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="city">City *</label>
+                <input type="text" id="city" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="postal">Postal Code *</label>
+                <input type="text" id="postal" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="country">Country *</label>
+                <input type="text" id="country" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="plan">Membership Plan *</label>
+                <select id="plan" class="input-field" required>
+                    <option value="">Select a plan</option>
+                    <option value="basic">Basic ($9.99/month)</option>
+                    <option value="premium">Premium ($19.99/month)</option>
+                    <option value="vip">VIP ($29.99/month)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="input-label" for="referral">Referral Code</label>
+                <input type="text" id="referral" class="input-field">
+            </div>
+            <div class="form-group form-full-width">
+                <label class="input-label">
+                    <input type="checkbox" required>
+                    I agree to the terms and conditions *
+                </label>
+            </div>
+            <div class="form-group form-full-width">
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <address>
+                    <p>doon campis</p>
+                    <p>vietnam</p>
+                    <p>Phone: <a href="tel:+12549412" class="footer-link">12549412</a></p>
+                    <p>Email: <a href="mailto:hector@gmail.com" class="footer-link">hector@gmail.com</a></p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="products.html" class="footer-link">Products</a></li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="membership.html" class="footer-link">Membership</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Member Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Member Benefits</a></li>
+                    <li><a href="#" class="footer-link">FAQs</a></li>
+                    <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link" aria-label="Visit our Facebook page">Facebook</a></li>
+                    <li><a href="#" class="footer-link" aria-label="Follow us on Twitter">Twitter</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
