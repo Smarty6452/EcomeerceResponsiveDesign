@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/productlist.css"> 
+    <link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header role="banner"> 
+        <!-- Header Main -->
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="header-logo">
+                <img src="logo.svg" alt="Site Logo" width="120" height="36">
+            </a>
+            <!-- Search Bar -->
+            <div class="header-search" role="search">
+                <nav class="desktop-navigation-menu" role="navigation">
+                    <ul class="menu-category-list">
+                        <li><a href="#" class="menu-title">Home</a></li>
+                        <li><a href="#" class="menu-title">Categories</a></li>
+                        <li><a href="#" class="menu-title">About</a></li>
+                        <li><a href="#" class="menu-title">Contact</a></li>
+                        <li><a href="#" class="menu-title">Offers</a></li>
+                    </ul>
+                </nav> 
+            </div>
+            <!-- User Actions -->
+            <div class="header-user-actions">
+                <input type="search" name="search" class="search-field" placeholder="Search products...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="container">
+
+            </div>
+        </div>
+
+    </header>
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2 class="section-title">Product List</h2>   
+        <!-- Filters -->
+        <div class="filters">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+            </select>
+            <select id="size-filter">
+                <option value="">All Sizes</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+        </div>
+        <!-- Product Grid -->
+        <div id="product-grid" class="product-grid">
+            <!-- Products will be dynamically populated here -->
+             <section class="featured-products">
+    <h2 class="section-title">Featured Clothing</h2>
+    <div class="product-grid">
+    </div>
+</section>
+        </div>
+        <button id="load-more-btn" class="load-more-btn">Load More Products</button>
+    </section>
+    <script src="js/productlist.js"></script>
+</body>
+</html>
