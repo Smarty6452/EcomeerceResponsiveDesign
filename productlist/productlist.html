@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/productlist.css">
+    <link rel="stylesheet" href="../singleproduct/assets/css/singleProduct.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header role="banner"> 
+        <!-- Header Main -->
+        <div class="header-main">
+            <!-- Logo -->
+            <a href="#" class="header-logo">
+                <img src="assets/images/logo.png" alt="Site Logo" width="140" height="40">
+            </a>
+            <!-- Search Bar -->
+            <div class="header-search" role="search">
+                <nav class="desktop-navigation-menu" role="navigation">
+                    <ul class="menu-category-list">
+                        <ul class="menu-category-list">
+                            <li><a href="#" class="menu-title">Home</a></li>
+                            <li><a href="productlist.html" class="menu-title">Products</a></li>
+                            <li><a href="#" class="menu-title">About us</a></li>
+                            <li><a href="#" class="menu-title">Contact us</a></li>
+                        </ul>
+                    </ul>
+                </nav> 
+            </div>
+            <!-- User Actions -->
+            <div class="header-user-actions">
+                <input type="search" name="search" class="search-field" placeholder="Search products...">
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+        <div class="header-top">
+            <div class="container">
+                <div class="header-alert-news">
+                    <p><b>Free Shipping:</b> Orders Over $55 This Week!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2 class="section-title">Product List</h2>   
+        <!-- Filters -->
+        <div class="filters">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+                <option value="Men">Men</option>
+                <option value="Women">Women</option>
+            </select>
+            <select id="size-filter">
+                <option value="">All Sizes</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+            </select>
+        </div>
+        <!-- Product Grid -->
+        <div id="product-grid" class="product-grid">
+            <!-- Products will be dynamically populated here -->
+             <section class="featured-products">
+        <h2 class="section-title">Product List</h2>
+        <div class="product-grid">
+        </div>
+    </section>
+        </div>
+        <button id="load-more-btn" class="load-more-btn">Load More Products</button>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <!-- First Column: Home Links -->
+          <div class="footer-column">
+            <h3>Home Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="productlist.html">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Second Column: Social Links -->
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.x.com/">Twitter</a></li>
+                <li><a href="https://www.Instagram.com/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            </ul>
+          </div>
+          <!-- Third Column: Map -->
+          <div class="footer-column map">
+            <h3>Our Location</h3>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12029.570021319148!2d-79.3832!3d43.6532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4c4d8b97a9db1%3A0x7d84e52e1f9d900d!2sCanada!5e0!3m2!1sen!2sca!4v1675137532784!5m2!1sen!2sca"
+            width="100%" 
+            height="250" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>       
+          </div>
+        </div>
+      </footer>
+    <script src="js/productlist.js"></script>
+</body>
+</html>
